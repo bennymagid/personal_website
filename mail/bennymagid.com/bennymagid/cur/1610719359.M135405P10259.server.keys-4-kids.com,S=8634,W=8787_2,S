@@ -1,0 +1,153 @@
+Return-Path: <bmm2179@columbia.edu>
+Delivered-To: bennymagid@bennymagid.com
+Received: from server.keys-4-kids.com
+	by server.keys-4-kids.com with LMTP
+	id oT6mB3+gAWATKAAAt7wdTw
+	(envelope-from <bmm2179@columbia.edu>)
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:02:39 -0500
+Return-path: <bmm2179@columbia.edu>
+Envelope-to: bennymagid@bennymagid.com
+Delivery-date: Fri, 15 Jan 2021 09:02:39 -0500
+Received: from mx0a-00364e01.pphosted.com ([148.163.135.74]:56746)
+	by server.keys-4-kids.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <bmm2179@columbia.edu>)
+	id 1l0PgS-0002dS-D1
+	for bennymagid@bennymagid.com; Fri, 15 Jan 2021 09:02:38 -0500
+Received: from pps.filterd (m0167072.ppops.net [127.0.0.1])
+	by mx0a-00364e01.pphosted.com (8.16.0.42/8.16.0.42) with SMTP id 10FDgJUv015463
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:01:55 -0500
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed; d=columbia.edu; h=mime-version : from
+ : date : message-id : subject : to : content-type; s=pps01;
+ bh=8TyenUOTGwbyuZSFBT1WIUaFM+lEMoyu7iV74KbWsn0=;
+ b=KdNLBu8cCd/g1bGBfEEktBacVwV4DcPffSIvpH3YS42PfotrcnRtgIdUlKrcc+pHUfCZ
+ iJp3uoB0zQibDnBMPxXvqxjYdAeZ63YLZMjdLgmUqHqRl86IigLQVQldXdJOqDdgLR0p
+ uoCWulivZgDZST5fsoJKb9IkpGWdli5vKOUL2WlSwkjIEz7cdRxUTPYFPjPjI8oe0Aq4
+ wrReoyLHKctl97Ylw7EuRwBLLf4MgI6B79uvQZ7StpbZpYO7fkw2Ri36Y3fzg9lIUKJU
+ 52+tLuJHnd64lyrDwg6P+SxVg92R+1ataGT0tHhbarQG9epCMtY6Y6Dcn+DBHhJaX/0c hQ== 
+Received: from sendprodmail12.cc.columbia.edu (sendprodmail12.cc.columbia.edu [128.59.72.20])
+	by mx0a-00364e01.pphosted.com with ESMTP id 35ytn27ubc-1
+	(version=TLSv1.2 cipher=ECDHE-RSA-AES256-GCM-SHA384 bits=256 verify=NOT)
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:01:55 -0500
+Received: from mail-qt1-f198.google.com (mail-qt1-f198.google.com [209.85.160.198])
+	by sendprodmail12.cc.columbia.edu (8.14.4/8.14.4) with ESMTP id 10FE1rcR047377
+	(version=TLSv1/SSLv3 cipher=AES128-GCM-SHA256 bits=128 verify=NOT)
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:01:53 -0500
+Received: by mail-qt1-f198.google.com with SMTP id t20so7386744qtq.1
+        for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 06:01:53 -0800 (PST)
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=8TyenUOTGwbyuZSFBT1WIUaFM+lEMoyu7iV74KbWsn0=;
+        b=h4ginJMcLQ7Y4Uaq+6MDp4rXSL0pMpqgfOyZ088ts6ddO4XvoWfM1lTft3JFroIr7U
+         8BtXK1vlKUe7v3fUgeakskSHvyaAOME6E/Kedmj+ETlHpGLvKSyXZFz++gGt3ZZW6uWe
+         8OMTpswzSoZSQOH9+LJ1ayx8aCG1DLGQgRCHqssQC/2szEvhYXKa/8K1ykNGsvOAhm1Q
+         ttSgA5VcymaiDB/UvU7FvIiEq6GWXfSl0iOpGwAo8Kjb02WzqHupSBqyxOSiy8JwxIAl
+         ZyOSbbkn/xnbrJQn2l65YYE/d78lWzY6tU4lUS5hkLLvrH1ubkd66/kRDZ4uMDPGDV08
+         Qcpw==
+X-Gm-Message-State: AOAM533gKx9O/hs8nKApzlJG+LhY3DgiSCHiN1kXVrbCGY7mCvJ+GSSC
+	GVtztkOvvhwZMo5uGDyCEWYiVi4iSCaJ4OhieS5n/GE12wl6pfiWeQ0dUL+XrqDymJTSsjeP/Bm
+	rGgnYEqRvfhbgWMQZSoso+8jP9uxHdVuns+kjIFV31YD/
+X-Received: by 2002:a05:620a:95e:: with SMTP id w30mr12524479qkw.97.1610719312807;
+        Fri, 15 Jan 2021 06:01:52 -0800 (PST)
+X-Google-Smtp-Source: ABdhPJxW3oLo1b8C4oP7qwwm2O4NbS06OoCLKIl7NH6qztqWIi01IIxbqNi/zsViqGMZSpsyWUrq/tb5HoYy0y21J9k=
+X-Received: by 2002:a05:620a:95e:: with SMTP id w30mr12524441qkw.97.1610719312452;
+ Fri, 15 Jan 2021 06:01:52 -0800 (PST)
+MIME-Version: 1.0
+From: Benjamin Mark Magid <bmm2179@columbia.edu>
+Date: Fri, 15 Jan 2021 09:01:41 -0500
+Message-ID: <CABvH++rfmG4VAaqwYPV+G4EA=QEjyUNa6kfyFRx3_EoUEr-1YQ@mail.gmail.com>
+Subject: Hello you
+To: "bennymagid@bennymagid.com" <bennymagid@bennymagid.com>
+Content-Type: multipart/alternative; boundary="00000000000073b3e605b8f0d054"
+X-CU-OB: Yes
+X-Proofpoint-Virus-Version: vendor=fsecure engine=2.50.10434:6.0.343,18.0.737
+ definitions=2021-01-15_07:2021-01-15,2021-01-15 signatures=0
+X-Proofpoint-Spam-Details: rule=inbound_notspam policy=inbound score=0 mlxlogscore=310 phishscore=0
+ adultscore=0 spamscore=0 bulkscore=10 clxscore=1015 lowpriorityscore=10
+ mlxscore=0 impostorscore=10 suspectscore=0 malwarescore=0
+ priorityscore=1501 classifier=spam adjust=0 reason=mlx scancount=1
+ engine=8.12.0-2009150000 definitions=main-2101150084
+X-Spam-Status: No, score=-0.2
+X-Spam-Score: -1
+X-Spam-Bar: /
+X-Ham-Report: Spam detection software, running on the system "server.keys-4-kids.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  -- Benjamin Magid Computer Science Student, *Columbia University*
+    
+ Content analysis details:   (-0.2 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: github.io]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+                              no trust
+                             [148.163.135.74 listed in list.dnswl.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.0 T_KAM_HTML_FONT_INVALID BODY: Test for Invalidly Named or
+                             Formatted Colors in HTML
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [148.163.135.74 listed in wl.mailspike.net]
+X-Spam-Flag: NO
+
+--00000000000073b3e605b8f0d054
+Content-Type: text/plain; charset="UTF-8"
+
+-- 
+
+Benjamin Magid
+
+Computer Science Student, *Columbia University*
+
+bmm2179@columbia.edu
+
+LinkedIn <https://www.linkedin.com/in/benjamin-magid/> |
+bennymagid.github.io
+
+--00000000000073b3e605b8f0d054
+Content-Type: text/html; charset="UTF-8"
+Content-Transfer-Encoding: quoted-printable
+
+-- <br><div dir=3D"ltr" class=3D"gmail_signature" data-smartmail=3D"gmail_s=
+ignature"><div dir=3D"ltr"><p dir=3D"ltr" style=3D"color:rgb(34,34,34);line=
+-height:1.2;margin-top:0pt;margin-bottom:0pt"><font face=3D"tahoma, sans-se=
+rif"><span style=3D"color:rgb(0,0,0);background-color:transparent;font-weig=
+ht:700;vertical-align:baseline;white-space:pre-wrap">Benjamin Magid </span>=
+</font></p><p dir=3D"ltr" style=3D"color:rgb(34,34,34);line-height:1.2;marg=
+in-top:0pt;margin-bottom:0pt"><span style=3D"background-color:transparent;c=
+olor:rgb(0,0,0);white-space:pre-wrap"><font face=3D"arial, sans-serif" size=
+=3D"1">Computer Science Student, <i>Columbia University</i></font></span></=
+p><p dir=3D"ltr" style=3D"color:rgb(34,34,34);line-height:1.38;margin-top:0=
+pt;margin-bottom:0pt"><font face=3D"tahoma, sans-serif"><a href=3D"mailto:b=
+mm2179@columbia.edu" style=3D"color:rgb(17,85,204)" target=3D"_blank"><span=
+ style=3D"font-size:8pt;color:rgb(2,59,96);background-color:transparent;ver=
+tical-align:baseline;white-space:pre-wrap">bmm2179@columbia.edu</span></a><=
+/font></p><p dir=3D"ltr" style=3D"color:rgb(34,34,34);line-height:1.38;marg=
+in-top:0pt;margin-bottom:0pt"><font face=3D"tahoma, sans-serif"><a href=3D"=
+https://www.linkedin.com/in/benjamin-magid/" style=3D"color:rgb(17,85,204)"=
+ target=3D"_blank"><span style=3D"font-size:8pt;color:rgb(2,59,96);backgrou=
+nd-color:transparent;vertical-align:baseline;white-space:pre-wrap">LinkedIn=
+</span></a><span style=3D"font-size:8pt;color:rgb(2,59,96);background-color=
+:transparent;vertical-align:baseline;white-space:pre-wrap"> </span><span st=
+yle=3D"font-size:8pt;color:rgb(0,0,0);background-color:transparent;vertical=
+-align:baseline;white-space:pre-wrap">| </span><a href=3D"https://bennymagi=
+d.github.io/" style=3D"color:rgb(17,85,204)" target=3D"_blank"><span style=
+=3D"font-size:8pt;color:rgb(2,59,96);background-color:transparent;vertical-=
+align:baseline;white-space:pre-wrap">bennymagid.github.io<span></span><span=
+></span></span></a></font></p></div></div>
+
+--00000000000073b3e605b8f0d054--

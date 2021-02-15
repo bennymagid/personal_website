@@ -1,0 +1,96 @@
+Return-Path: <ben.m.magid@gmail.com>
+Delivered-To: bennymagid@bennymagid.com
+Received: from server.keys-4-kids.com
+	by server.keys-4-kids.com with LMTP
+	id WAouH2KhAWATKAAAt7wdTw
+	(envelope-from <ben.m.magid@gmail.com>)
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:06:26 -0500
+Return-path: <ben.m.magid@gmail.com>
+Envelope-to: bennymagid@bennymagid.com
+Delivery-date: Fri, 15 Jan 2021 09:06:26 -0500
+Received: from mail-oi1-f181.google.com ([209.85.167.181]:32914)
+	by server.keys-4-kids.com with esmtps (TLSv1.2:ECDHE-RSA-AES128-GCM-SHA256:128)
+	(Exim 4.92)
+	(envelope-from <ben.m.magid@gmail.com>)
+	id 1l0PkA-0002o1-57
+	for bennymagid@bennymagid.com; Fri, 15 Jan 2021 09:06:26 -0500
+Received: by mail-oi1-f181.google.com with SMTP id d203so9654286oia.0
+        for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 06:06:05 -0800 (PST)
+DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=gmail.com; s=20161025;
+        h=mime-version:from:date:message-id:subject:to;
+        bh=hABB2YMX/i/MJY3k9I+UM3vD7PFn8kOPwUF9esHId28=;
+        b=c/ISuk7HIHc8yRwR7SmtODT7BBggFW9DBhvs4amVKnKyZzSgAwcYf141OfCGZAF2HN
+         W3jeCAY3jv1BT2BgaU8l/oltouZFkuR0F+SDfjT9dJJc2LcJbEdfanabIUTJPlZIA78Z
+         NGtblLCEIryG3g1CwGxV7QP+PKl0/ZDCZRILSZzXwRUE3XY+BxLaDn6T7vLG1VcgEYS0
+         FTL1a1Sd43MwUsgP8Cbgqar7C/3W9dOik2Qa3Y5Lrc/rDZz5dGnrlRaN6B53rjPs1kE1
+         6qknFZsE3RRyYZnimLzrO0xbheRugseGWkAtV/xPYG2AfG2ZfANJa9lYcZEwSh3xkR9q
+         eerw==
+X-Google-DKIM-Signature: v=1; a=rsa-sha256; c=relaxed/relaxed;
+        d=1e100.net; s=20161025;
+        h=x-gm-message-state:mime-version:from:date:message-id:subject:to;
+        bh=hABB2YMX/i/MJY3k9I+UM3vD7PFn8kOPwUF9esHId28=;
+        b=Z4+EgKOFQKV78TNeX6960cNFXjIPjT+x6fbfm/lz8KEyqpkcUm2WI1zIrg3Oq+hze+
+         i8ZOZ9xPg8jIiJHpa9fBQith6K4CNZVA1HEOhGmkWOZ/OlDoZ2cDb2q8xSpUHCTzLBti
+         2/IFmdvs7su0Yj8bJ7k+nhPB93OH17GdvLSB9dt0Ug/118XywtaTiIhV+zJd/sRMQlF6
+         LoF36J0Vr+CtVGv28iIYRU1UcnNdJvc8KlZMm/oG/BHPlWVjNbkI+t5b3ex1zoHlXplh
+         KQ0hMS4HOv79UArAp2cw1jkdz/WUpnvBiATuVBQ3NrG7wj5sj5y82Kp/1WIJ9HbrIaqm
+         C+Xw==
+X-Gm-Message-State: AOAM532pp63WvYyBLUlBVcKT35YhE4ASAuPyGuXJoTyyk6J0uSun3dyF
+	Jo+RPE6hTV/DHMSTNkTqvMOvpwnLAjJasKaEbf69F57Ejlk=
+X-Google-Smtp-Source: ABdhPJxqELeoCf7JwbYhpRp4o+CFssSgop7rj1Tx0AyofIpYPwjKPtOVD29DXRBVuJ+yfNw68p7JB0rjG5wTH886mhM=
+X-Received: by 2002:aca:db8b:: with SMTP id s133mr2207877oig.27.1610719545119;
+ Fri, 15 Jan 2021 06:05:45 -0800 (PST)
+MIME-Version: 1.0
+From: Benjamin Magid <ben.m.magid@gmail.com>
+Date: Fri, 15 Jan 2021 09:05:33 -0500
+Message-ID: <CADUQWxu5iwUH8=jP7hKF=01_B50GdaUPTyTOKHaSL=pqSrhMjA@mail.gmail.com>
+Subject: 
+To: bennymagid <bennymagid@bennymagid.com>
+Content-Type: multipart/alternative; boundary="00000000000051d8fc05b8f0dea6"
+X-Spam-Status: No, score=3.8
+X-Spam-Score: 38
+X-Spam-Bar: +++
+X-Ham-Report: Spam detection software, running on the system "server.keys-4-kids.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  Hjdoeksidjwkall Hjdoeksidjwkall 
+ Content analysis details:   (3.8 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+                              no trust
+                             [209.85.167.181 listed in list.dnswl.org]
+  0.0 FREEMAIL_FROM          Sender email is commonly abused enduser mail
+                             provider (ben.m.magid[at]gmail.com)
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+ -0.1 DKIM_VALID_AU          Message has a valid DKIM or DK signature from
+                             author's domain
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+ -0.1 DKIM_VALID             Message has at least one valid DKIM or DK signature
+ -0.1 DKIM_VALID_EF          Message has a valid DKIM or DK signature from
+                             envelope-from domain
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+ -0.0 RCVD_IN_MSPIKE_H2      RBL: Average reputation (+2)
+                             [209.85.167.181 listed in wl.mailspike.net]
+  0.0 TVD_SPACE_RATIO        No description available.
+  2.0 PDS_TONAME_EQ_TOLOCAL_SHORT Short body with To: name matches
+                             everything in local email
+X-Spam-Flag: NO
+
+--00000000000051d8fc05b8f0dea6
+Content-Type: text/plain; charset="UTF-8"
+
+Hjdoeksidjwkall
+
+--00000000000051d8fc05b8f0dea6
+Content-Type: text/html; charset="UTF-8"
+
+Hjdoeksidjwkall
+
+--00000000000051d8fc05b8f0dea6--

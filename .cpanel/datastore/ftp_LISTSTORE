@@ -1,0 +1,1 @@
+{"version":"2.4","action":"fetch","timeout":0,"data":[{"type":"main","homedir":"/home/bennymagid","user":"bennymagid"},{"homedir":"/etc/apache2/logs/domlogs/bennymagid","type":"logaccess","user":"bennymagid_logs"}],"status":1,"mode":"simple","statusmsg":"Ran adminbin Cpanel/ftp/LISTSTORE","error":0,"exit_code":0}

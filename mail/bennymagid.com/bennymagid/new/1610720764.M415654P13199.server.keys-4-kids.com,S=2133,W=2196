@@ -1,0 +1,63 @@
+Return-Path: <>
+Delivered-To: bennymagid@bennymagid.com
+Received: from server.keys-4-kids.com
+	by server.keys-4-kids.com with LMTP
+	id kgKkGPylAWCPMwAAt7wdTw
+	(envelope-from <>)
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:26:04 -0500
+Return-path: <>
+Envelope-to: bennymagid@bennymagid.com
+Delivery-date: Fri, 15 Jan 2021 09:26:04 -0500
+Received: from mailnull by server.keys-4-kids.com with local (Exim 4.92)
+	id 1l0EhR-0002uU-2f
+	for bennymagid@bennymagid.com; Thu, 14 Jan 2021 21:18:53 -0500
+X-Failed-Recipients: bennymagid@bennymagid.com
+Auto-Submitted: auto-replied
+From: Mail Delivery System <Mailer-Daemon@server.keys-4-kids.com>
+To: bennymagid@bennymagid.com
+Content-Type: multipart/report; report-type=delivery-status; boundary=1610677133-eximdsn-594357342
+MIME-Version: 1.0
+Subject: Mail delivery failed: returning message to sender
+Message-Id: <E1l0EhR-0002uU-2f@server.keys-4-kids.com>
+Date: Thu, 14 Jan 2021 21:18:53 -0500
+
+--1610677133-eximdsn-594357342
+Content-type: text/plain; charset=us-ascii
+
+This message was created automatically by mail delivery software.
+
+A message that you sent could not be delivered to one or more of its
+recipients. This is a permanent error. The following address(es) failed:
+
+  bennymagid@bennymagid.com
+    No Such User Here
+
+--1610677133-eximdsn-594357342
+Content-type: message/delivery-status
+
+Reporting-MTA: dns; server.keys-4-kids.com
+
+Action: failed
+Final-Recipient: rfc822;bennymagid@bennymagid.com
+Status: 5.0.0
+
+--1610677133-eximdsn-594357342
+Content-type: message/rfc822
+
+Return-path: <bennymagid@bennymagid.com>
+Received: from [::1] (port=44447 helo=server.keys-4-kids.com)
+	by server.keys-4-kids.com with esmtpa (Exim 4.92)
+	(envelope-from <bennymagid@bennymagid.com>)
+	id 1l0EhR-0002uP-0A
+	for bennymagid@bennymagid.com; Thu, 14 Jan 2021 21:18:53 -0500
+MIME-Version: 1.0
+Date: Thu, 14 Jan 2021 21:18:52 -0500
+From: bennymagid <bennymagid@bennymagid.com>
+To: bennymagid@bennymagid.com
+Subject: hu
+Message-ID: <a3681844707b9e94f0de940b7b018809@bennymagid.com>
+X-Sender: bennymagid@bennymagid.com
+User-Agent: Roundcube Webmail/1.3.8
+
+
+--1610677133-eximdsn-594357342--

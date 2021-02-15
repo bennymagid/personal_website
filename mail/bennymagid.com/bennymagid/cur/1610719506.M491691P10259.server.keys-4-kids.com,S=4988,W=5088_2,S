@@ -1,0 +1,100 @@
+Return-Path: <SRS0=Vx/mSm=GS=bennymagid.com=bennymagid@eigbox.net>
+Delivered-To: bennymagid@bennymagid.com
+Received: from server.keys-4-kids.com
+	by server.keys-4-kids.com with LMTP
+	id OBrXHBKhAWATKAAAt7wdTw
+	(envelope-from <SRS0=Vx/mSm=GS=bennymagid.com=bennymagid@eigbox.net>)
+	for <bennymagid@bennymagid.com>; Fri, 15 Jan 2021 09:05:06 -0500
+Return-path: <SRS0=Vx/mSm=GS=bennymagid.com=bennymagid@eigbox.net>
+Envelope-to: bennymagid@bennymagid.com
+Delivery-date: Fri, 15 Jan 2021 09:05:06 -0500
+Received: from bosmailout06.eigbox.net ([66.96.188.6]:56399)
+	by server.keys-4-kids.com with esmtps (TLSv1.2:ECDHE-RSA-AES256-GCM-SHA384:256)
+	(Exim 4.92)
+	(envelope-from <SRS0=Vx/mSm=GS=bennymagid.com=bennymagid@eigbox.net>)
+	id 1l0Piq-0002ku-Qm
+	for bennymagid@bennymagid.com; Fri, 15 Jan 2021 09:05:06 -0500
+Received: from bosmailscan10.eigbox.net ([10.20.15.10])
+	by bosmailout06.eigbox.net with esmtp (Exim)
+	id 1l0PiA-0000Oj-G8
+	for bennymagid@bennymagid.com; Fri, 15 Jan 2021 09:04:22 -0500
+DKIM-Signature: v=1; a=rsa-sha256; q=dns/txt; c=relaxed/relaxed;
+	d=bennymagid.com; s=dkim; h=Sender:Content-Transfer-Encoding:Content-Type:
+	Message-ID:Subject:To:From:Date:MIME-Version:Reply-To:Cc:Content-ID:
+	Content-Description:Resent-Date:Resent-From:Resent-Sender:Resent-To:Resent-Cc
+	:Resent-Message-ID:In-Reply-To:References:List-Id:List-Help:List-Unsubscribe:
+	List-Subscribe:List-Post:List-Owner:List-Archive;
+	bh=79lLnODjX2qcPyVXqGrSwz9xRc00h6Xs/HXxJYix6ec=; b=f6L6R9hBuR3uim1gCoSoNEpkXY
+	5TIm5UNkXaaKGYEek0OGBc7dSmM5k6U7tr7NglGAUoJ/0VhJ7FdG4ZfENjtCzGLtZwv9+QnP8r1GO
+	ZXsnrTRvRQ/HhsBC0CN4bXyfQeWsBnVZSrsWpUSRTyOXqddmD6FdhTNDT6qGSsJX7gWqRhUj6XDD5
+	Emsnni22pbZYB3IoA8OOAvuahP42Mgkhk+KC1EkZLCm42KP7kxjPxah+kHVwXTwZunPZ7Dq9yfFKp
+	WwrTGPHwQu7RcwZZpNNBP2+GhdhOZpEIRYJGQtyAlMQX4Qf1X4TlqiaD6vcyzJ1YEGT3PY2jaL5xw
+	DqMH1eog==;
+Received: from [10.115.3.31] (helo=bosimpout11)
+	by bosmailscan10.eigbox.net with esmtp (Exim)
+	id 1l0PiA-0008IW-6E
+	for bennymagid@bennymagid.com; Fri, 15 Jan 2021 09:04:22 -0500
+Received: from boswebmail04.eigbox.net ([10.20.16.4])
+	by bosimpout11 with 
+	id H24G2400205Fa2q0124MzM; Fri, 15 Jan 2021 09:04:22 -0500
+X-Authority-Analysis: v=2.3 cv=DtjNBF3+ c=1 sm=1 tr=0
+ a=vm2YChOMZffJigLVyVMdzQ==:117 a=oi4Ya+osfpTUZXxF+J97EQ==:17
+ a=IkcTkHD0fZMA:10 a=EmqxpYm9HcoA:10 a=tclcd6dtLQvEqt9_mmAA:9
+ a=_W_S_7VecoQA:10 a=QEXdDO2ut3YA:10 a=Z5ABNNGmrOfJ6cZ5bIyy:22
+ a=QOGEsqRv6VhmHaoFNykA:22
+Received: from [127.0.0.1] (helo=domaincom)
+	by boswebmail04.eigbox.net with esmtp (Exim)
+	id 1l0Pi3-0001yw-T0
+	for bennymagid@bennymagid.com; Fri, 15 Jan 2021 09:04:15 -0500
+Received: from pool-74-104-184-184.bstnma.fios.verizon.net ([74.104.184.184])
+ by emailmg.domain.com
+ with HTTP (HTTP/1.1 POST); Fri, 15 Jan 2021 09:04:15 -0500
+MIME-Version: 1.0
+Date: Fri, 15 Jan 2021 09:04:15 -0500
+From: bennymagid@bennymagid.com
+To: bennymagid@bennymagid.com
+Subject: blah
+Message-ID: <01064aec9d15c8aaed2d9662a72dc7d7@bennymagid.com>
+X-Sender: bennymagid@bennymagid.com
+User-Agent: Roundcube Webmail/1.3.14
+Content-Type: text/html; charset=UTF-8
+Content-Transfer-Encoding: quoted-printable
+X-EN-AuthUser: bennymagid@bennymagid.com
+Sender:  bennymagid@bennymagid.com
+X-Spam-Status: No, score=2.4
+X-Spam-Score: 24
+X-Spam-Bar: ++
+X-Ham-Report: Spam detection software, running on the system "server.keys-4-kids.com",
+ has NOT identified this incoming email as spam.  The original
+ message has been attached to this so you can view it or label
+ similar future email.  If you have any questions, see
+ root\@localhost for details.
+ Content preview:  
+ Content analysis details:   (2.4 points, 5.0 required)
+  pts rule name              description
+ ---- ---------------------- --------------------------------------------------
+  0.0 URIBL_BLOCKED          ADMINISTRATOR NOTICE: The query to URIBL was
+                             blocked.  See
+                             http://wiki.apache.org/spamassassin/DnsBlocklists#dnsbl-block
+                              for more information.
+                             [URIs: bennymagid.com]
+ -0.0 RCVD_IN_DNSWL_NONE     RBL: Sender listed at https://www.dnswl.org/,
+                              no trust
+                             [66.96.188.6 listed in list.dnswl.org]
+ -0.0 SPF_PASS               SPF: sender matches SPF record
+  0.2 HEADER_FROM_DIFFERENT_DOMAINS From and EnvelopeFrom 2nd level
+                             mail domains are different
+  0.1 MIME_HTML_ONLY         BODY: Message only has text/html MIME parts
+  0.0 HTML_MESSAGE           BODY: HTML included in message
+  0.1 DKIM_SIGNED            Message has a DKIM or DK signature, not necessarily
+                             valid
+  2.0 PYZOR_CHECK            Listed in Pyzor
+                             (https://pyzor.readthedocs.io/en/latest/)
+X-Spam-Flag: NO
+
+<html><head><meta http-equiv=3D"Content-Type" content=3D"text/html; charset=
+=3DUTF-8" /></head><body style=3D'font-size: 10pt; font-family: Verdana,Gen=
+eva,sans-serif'>
+<p><br /></p>
+
+</body></html>
